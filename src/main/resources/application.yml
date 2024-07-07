@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: MyPortalBoot
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/himedia
+    username: himedia
+    password: himedia
+  servlet:
+    multipart:
+      enabled: true
+      location: c:\\tmp
+      max-file-size: 10485760
+      max-request-size: 20971520
+      file-size-threshold: 10485760
+
+
+file:
+  save:
+    path: /tmp
